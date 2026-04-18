@@ -118,6 +118,31 @@ athena/screenshots/top-merchants-query.png
 athena/screenshots/fraud-vs-nonfraud-query.png
 athena/screenshots/top-categories-query.png
 
+## Power BI Dashboard
+
+A dashboard was created in Microsoft Power BI using the processed fraud transaction data exported from Amazon Athena.
+
+Dashboard Name:
+
+Credit Card Fraud Analytics Dashboard
+
+The dashboard includes:
+
+- HIGH vs LOW risk transactions
+- Fraud vs Non-Fraud transaction count
+- Top 10 fraud states
+- Top 10 merchants by transaction count
+- Top transaction categories
+- KPI cards for total transactions and fraud activity
+
+Power BI files available in:
+
+powerBI/credit_fraud_dashboard.pbix
+
+Dashboard screenshots available in:
+
+screenshots/
+
 
 ## Future Improvements
 --Build a Power BI dashboard using processed data
@@ -127,6 +152,8 @@ athena/screenshots/top-categories-query.png
 --Add data partitioning for better Athena performance
 
 
+
+##Folder Structure
 credit-card-fraud-pipeline/
 │
 ├── athena/
@@ -148,6 +175,14 @@ credit-card-fraud-pipeline/
 ├── lambda/
 │   └── trigger_glue_job.py
 │
+├── powerBI/
+│   ├── fraud_dashboard.pbix
+│   ├── Risk level summary.csv
+│   ├── Top 10 merchants with the highest number of transactions.csv
+│   ├── Top 10 states with highest number of transactions.csv
+│   ├── Top 10 transaction categories.csv
+│   └── Fraud_vs_non-fraud.csv
+│
 ├── screenshots/
 │   ├── Buckets_create.png
 │   ├── Raw data Folder.png
@@ -156,7 +191,11 @@ credit-card-fraud-pipeline/
 │   ├── Fraud_cleaning_job_scripts.png
 │   ├── ETL job running.png
 │   ├── processed data folder.png
-│   └── ETL_output_data.png
+│   ├── ETL_output_data.png
+│   ├── dashboard-overview.png
+│   ├── risk-level-visual.png
+│   ├── top-states-visual.png
+│   └── top-merchants-visual.png
 │
 ├── .gitignore
 └── README.md
